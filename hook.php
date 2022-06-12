@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
@@ -8,7 +7,7 @@ $bot_username = 'nkhTestPhp_bot';
     // Create Telegram API object
     $telegram = new Telegram($bot_api_key);
 	$chat = $telegram->ChatID();
-	$telegram->sendMessage(['chat_id'=>$chat, 'text'=>'test']);
+	$telegram->sendMessage(['chat_id'=>$chat, 'text'=>$chat]);
     // Handle telegram webhook request
     //  Request::sendMessage(['text'=>"hei"]);
     // Silence is golden!
