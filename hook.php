@@ -8,7 +8,7 @@ $bot_username = 'nkhTestPhp_bot';
     $telegram = new Telegram($bot_api_key);
 	$chat = $telegram->ChatID();
     $retured = exec("echo 'ali' >> /var/www/html/nkhpro/public/telegram/logs");
-	$telegram->sendMessage(['chat_id'=>$chat, 'text'=> $chat]);
+	$telegram->sendMessage(['chat_id'=>$chat, 'text'=> $retured]);
     // Handle telegram webhook request
     //  Request::sendMessage(['text'=>"hei"]);
     // Silence is golden!
