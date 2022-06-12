@@ -9,7 +9,7 @@ $bot_username = 'nkhTestPhp_bot';
 	$chat_id = $telegram->ChatID();
     $chat = $telegram->getChat($chat_id);
 //    $retured = exec("echo 'ali' >> /var/www/html/nkhpro/public/telegram/logs");
-	$telegram->sendMessage(['chat_id'=>$chat, 'text'=> "tst"]);
+	$telegram->sendMessage(['chat_id'=>$chat_id, 'text'=> $chat->username]);
     // Handle telegram webhook request
     //  Request::sendMessage(['text'=>"hei"]);
     // Silence is golden!
