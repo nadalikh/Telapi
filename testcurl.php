@@ -5,6 +5,7 @@ $messages = explode(",",$_GET['message']);
 $m = "";
 foreach ($messages as $message)
     $m .= $message."%0A";
+var_dump($m);
 
 curl_setopt_array(
     $ch, array(
