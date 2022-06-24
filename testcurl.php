@@ -6,3 +6,4 @@ curl_setopt_array(
     CURLOPT_RETURNTRANSFER => true
 ));
 $output = curl_exec($ch);
+echo $output;
