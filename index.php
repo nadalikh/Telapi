@@ -57,7 +57,9 @@
                     <label class="text-neutral-50 block" for="p">password</label>
                     <input class="text-neutral-50 block w-full ms-transparent ms-input" type="password" name="p" id="p">
                 </div>
-                <input class="text-neutral-50 block " type="submit" value="signin" name="login">
+                <div class="ms-wrapper">
+                    <input class="text-neutral-50 block " type="submit" value="signin" name="login">
+                </div>
             </form>
         </div>
     </div>
