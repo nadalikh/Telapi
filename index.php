@@ -34,7 +34,7 @@ while($row = $res->fetch_assoc())
                 <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid">Telegram Id (as your username)</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}" title="not satisfy the telegram users id rules">
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}" title=" must be at least 5-characters long, and may consist only of a-z, 0–9, and underscores.">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p1">password</label>
