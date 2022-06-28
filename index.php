@@ -13,7 +13,7 @@
     <title>NKH call center</title>
 </head>
 <body>
-    <div class="ms-full-height border-2 w-full">
+    <div class="ms-full-height ms-img-background border-2 w-full">
         <div class="navbar bg-base-100">
             <div class="flex-none m-auto">
                 <ul class="menu menu-horizontal p-0">
