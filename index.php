@@ -1,5 +1,5 @@
 <?php
-$appConneciton = new mysqli('195.28.11.16', "root", "expecto-patronum1379", "app");
+$appConneciton = new mysqli('195.28.11.16', "root", "expecto-patronum1379", "asterisk");
 //$asteriskConnection = new mysqli("195.28.11.16", "root", "expecto-patronum1379", "asterisk");
 if($appConneciton->connect_error/* || $asteriskConnection->connect_error*/)
     die($appConneciton->connect_error."/n"/*. $asteriskConnection->connect_error*/);
