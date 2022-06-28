@@ -39,10 +39,10 @@
                 <div class="ms-wrapper">
                 <label class="text-neutral-50 block" for="cars">Your voip extention</label>
                 <select class="outline-none text-neutral-50 block w-full ms-transparent" name="cars" id="cars">
-                    <option class="text-neutral-50 ms-transparent" value="volvo">Volvo</option>
-                    <option class="text-neutral-50 ms-transparent" value="saab">Saab</option>
-                    <option class="text-neutral-50 ms-transparent" value="mercedes">Mercedes</option>
-                    <option class="text-neutral-50 ms-transparent" value="audi">Audi</option>
+                    <option class="text-neutral-50 bg-slate-800" value="volvo">Volvo</option>
+                    <option class="text-neutral-50 bg-slate-800" value="saab">Saab</option>
+                    <option class="text-neutral-50 bg-slate-800" value="mercedes">Mercedes</option>
+                    <option class="text-neutral-50 bg-slate-800" value="audi">Audi</option>
                 </select>
                 </div>
                 <div class="ms-wrapper">
