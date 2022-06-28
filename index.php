@@ -14,13 +14,15 @@
 </head>
 
 <body>
-    <div class="ms-full-height ms-img-background border-2 w-full bg-cover bg-no-repeat bg-center">
-        <div class="navbar bg-base-100 " style="background: transparent">
-            <div class="flex-none m-auto">
-                <ul class="menu menu-horizontal p-0">
-                    <li><a href="#desktop">Desktop</a></li>
-                    <li><a href="#mobile">Mobile</a></li>
-                </ul>
+    <div class="ms-full-height ms-img-background w-full bg-cover bg-no-repeat bg-center">
+        <div class="ms-darkbackground w-full h-full">
+            <div class="ms-transparent navbar bg-base-100">
+                <div class="flex-none m-auto">
+                    <ul class="menu menu-horizontal p-0">
+                        <li><a href="#desktop">Desktop</a></li>
+                        <li><a href="#mobile">Mobile</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

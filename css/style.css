@@ -4,3 +4,11 @@
 .ms-img-background{
     background: url(../site_images/back1.jpg);
 }
+
+.ms-transparent{
+    background: transparent
+}
+
+.ms-darkbackground{
+    background:linear-gradient(90deg,black, black);
+}
