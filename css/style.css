@@ -13,6 +13,7 @@
     background:linear-gradient(90deg,#000000a8, #000000b5);
 }
 .ms-nav-item{
+    border:1px solid transparent !important;
 
 }
 .ms-nav-item:hover{
