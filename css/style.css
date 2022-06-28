@@ -38,8 +38,10 @@
     border-bottom: 1px solid white;
     margin-top: 10px;
     border-radius: 5px;
+    height: 30px;
+    padding: 3px;
 }
 .ms-input:focus,
 .ms-input:hover{
-    box-shadow: 1px 1px 8px white;
+    box-shadow: 1px 1px 10px white;
 }
