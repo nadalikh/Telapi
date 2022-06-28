@@ -17,11 +17,25 @@
     <div class="ms-full-height ms-img-background w-full bg-cover bg-no-repeat bg-center">
         <div class="ms-darkbackground w-full h-full">
             <div class="grid grid-flow-col auto-cols-max justify-center gap-2.5">
-                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md">Desktop</a>
-                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md">Mobile</a>
-
+                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md transition-all">Desktop</a>
+                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md transition-all">Mobile</a>
             </div>
         </div>
+        <form>
+            <label for="userid">Telegram Id (as your username)</label>
+            <input type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+            <label for="p1">password</label>
+            <input type="password" name="p1" id="p1">
+            <label for="p2">password confirmation</label>
+            <input type="password" name="p2" id="p2">
+            <label for="cars">Your voip extention</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </form>
     </div>
 </body>
 </html>
