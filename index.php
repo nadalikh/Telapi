@@ -16,16 +16,9 @@
 <body>
     <div class="ms-full-height ms-img-background w-full bg-cover bg-no-repeat bg-center">
         <div class="ms-darkbackground w-full h-full">
-<!--            <div class="ms-transparent navbar bg-base-100">-->
-<!--                <div class="grid grid-col-2">-->
-<!--                    <a href="#desktop" class="text-neutral-50 ms-nav-item">Desktop</a>-->
-<!--                    <a href="#mobile" class="text-neutral-50 ms-nav-item">Mobile</a>-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
             <div class="grid grid-flow-col auto-cols-max justify-center gap-2.5">
-                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounde    ">Desktop</a>
-                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3">Mobile</a>
+                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md">Desktop</a>
+                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounded-md">Mobile</a>
 
             </div>
         </div>
