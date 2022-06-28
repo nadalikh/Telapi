@@ -12,6 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>NKH call center</title>
 </head>
+
 <body>
     <div class="ms-full-height ms-img-background border-2 w-full">
         <div class="navbar bg-base-100">
