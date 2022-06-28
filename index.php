@@ -22,22 +22,22 @@
             </div>
         </div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 grid grid-cols-2 grid-rows-1 justify-center w-1/2">
-            <form method="post" class="m-auto">
+            <form method="post" class="w-2/3 m-auto">
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block" for="userid">Telegram Id (as your username)</label>
-                    <input class="text-neutral-50 block" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <label class="text-neutral-50 block w-full" for="userid">Telegram Id (as your username)</label>
+                    <input class="text-neutral-50 block w-full" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block" for="p1">password</label>
-                    <input class="text-neutral-50 block" type="password" name="p1" id="p1">
+                    <label class="text-neutral-50 block " for="p1">password</label>
+                    <input class="text-neutral-50 block w-full" type="password" name="p1" id="p1">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block" for="p2">password confirmation</label>
-                    <input class="text-neutral-50 block" type="password" name="p2" id="p2">
+                    <input class="text-neutral-50 block w-full" type="password" name="p2" id="p2">
                 </div>
                 <div class="ms-wrapper">
                 <label class="text-neutral-50 block" for="cars">Your voip extention</label>
-                <select class="text-neutral-50 block" name="cars" id="cars">
+                <select class="text-neutral-50 block w-full" name="cars" id="cars">
                     <option class="text-neutral-50 " value="volvo">Volvo</option>
                     <option class="text-neutral-50 " value="saab">Saab</option>
                     <option class="text-neutral-50 " value="mercedes">Mercedes</option>
@@ -48,12 +48,12 @@
                     <input class="text-neutral-50 " type="submit" name="signup" value="signup">
                 </div>
             </form>
-            <form method="post" class="m-auto">
-                <label class="text-neutral-50 block" for="userid">username</label>
-                <input class="text-neutral-50 block" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+            <form method="post" class="w-2/3 m-auto">
+                <label class="text-neutral-50 block " for="userid">username</label>
+                <input class="text-neutral-50 block w-full" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 <label class="text-neutral-50 block" for="p">password</label>
-                <input class="text-neutral-50 block" type="password" name="p" id="p">
-                <input class="text-neutral-50 block" type="submit" value="signin" name="login">
+                <input class="text-neutral-50 block w-full" type="password" name="p" id="p">
+                <input class="text-neutral-50 block " type="submit" value="signin" name="login">
             </form>
         </div>
     </div>
