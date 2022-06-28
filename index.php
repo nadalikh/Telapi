@@ -52,8 +52,8 @@
             <form method="post" class="w-full m-auto">
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block text-center" for="userid">username</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <label class="text-neutral-50 block text-center" for="userid-s">username</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid-s" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p">password</label>
