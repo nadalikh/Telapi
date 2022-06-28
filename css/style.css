@@ -30,3 +30,7 @@
 .ms-nav-item:focus{
     text-decoration: underline;
 }
+.ms-wrapper{
+    margin-top: 30px;
+
+}

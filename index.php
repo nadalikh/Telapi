@@ -23,12 +23,19 @@
         </div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2  -translate-y-1/2 grid grid-cols-2 grid-rows-1 justify-center ">
             <form method="post" class="m-auto">
-                <label class="text-neutral-50 block" for="userid">Telegram Id (as your username)</label>
-                <input class="text-neutral-50 block" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
-                <label class="text-neutral-50 block" for="p1">password</label>
-                <input class="text-neutral-50 block" type="password" name="p1" id="p1">
-                <label class="text-neutral-50 block" for="p2">password confirmation</label>
-                <input class="text-neutral-50 block" type="password" name="p2" id="p2">
+                <div class="ms-wrapper">
+                    <label class="text-neutral-50 block" for="userid">Telegram Id (as your username)</label>
+                    <input class="text-neutral-50 block" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                </div>
+                <div class="ms-wrapper">
+                    <label class="text-neutral-50 block" for="p1">password</label>
+                    <input class="text-neutral-50 block" type="password" name="p1" id="p1">
+                </div>
+                <div class="ms-wrapper">
+                    <label class="text-neutral-50 block" for="p2">password confirmation</label>
+                    <input class="text-neutral-50 block" type="password" name="p2" id="p2">
+                </div>
+                <div class="ms-wrapper">
                 <label class="text-neutral-50 block" for="cars">Your voip extention</label>
                 <select class="text-neutral-50 block" name="cars" id="cars">
                     <option class="text-neutral-50 " value="volvo">Volvo</option>
@@ -36,7 +43,10 @@
                     <option class="text-neutral-50 " value="mercedes">Mercedes</option>
                     <option class="text-neutral-50 " value="audi">Audi</option>
                 </select>
-                <input class="text-neutral-50 " type="submit" name="signup" value="signup">
+                </div>
+                <div class="ms-wrapper">
+                    <input class="text-neutral-50 " type="submit" name="signup" value="signup">
+                </div>
             </form>
             <form method="post" class="m-auto">
                 <label class="text-neutral-50 block" for="userid">username</label>
