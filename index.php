@@ -34,7 +34,7 @@ while($row = $res->fetch_assoc())
                 <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid">Telegram Id (as your username)</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p1">password</label>
@@ -61,7 +61,7 @@ while($row = $res->fetch_assoc())
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid-s">username</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid-s" placeholder="Your telegram id with out @">
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid-s"  placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p">password</label>
