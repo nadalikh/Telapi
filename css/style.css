@@ -16,11 +16,12 @@
     border:1px solid transparent !important;
 
 }
+
+.ms-nav-item:focus,
 .ms-nav-item:hover{
-    border:1px solid white !important;
-    box-shadow:2px 2px 8px azure;
+    box-shadow: 1px 1px 17px azure;
+    text-shadow: 1px 1px 10px white;
 }
 .ms-nav-item:focus{
-    border:1px solid white !important;
-
+    text-decoration: underline;
 }
