@@ -25,15 +25,15 @@
             <form method="post" class="w-2/3 m-auto">
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block w-full" for="userid">Telegram Id (as your username)</label>
-                    <input class="text-neutral-50 block w-full ms-transparent" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <input class="text-neutral-50 block w-full ms-transparent ms-input" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block " for="p1">password</label>
-                    <input class="text-neutral-50 block w-full ms-transparent" type="password" name="p1" id="p1" placeholder="Your password">
+                    <input class="text-neutral-50 block w-full ms-transparent ms-input" type="password" name="p1" id="p1" placeholder="Your password">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block" for="p2">password confirmation</label>
-                    <input class="text-neutral-50 block w-full ms-transparent" type="password" name="p2" id="p2" placeholder="Your password confirmation">
+                    <input class="text-neutral-50 block w-full ms-transparent ms-input" type="password" name="p2" id="p2" placeholder="Your password confirmation">
                 </div>
                 <div class="ms-wrapper">
                 <label class="text-neutral-50 block" for="cars">Your voip extention</label>
@@ -51,11 +51,11 @@
             <form method="post" class="w-2/3 m-auto">
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block " for="userid">username</label>
-                    <input class="text-neutral-50 block w-full ms-transparent" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <input class="text-neutral-50 block w-full ms-transparent ms-input" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block" for="p">password</label>
-                    <input class="text-neutral-50 block w-full ms-transparent" type="password" name="p" id="p">
+                    <input class="text-neutral-50 block w-full ms-transparent ms-input" type="password" name="p" id="p">
                 </div>
                 <input class="text-neutral-50 block " type="submit" value="signin" name="login">
             </form>
