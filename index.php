@@ -15,10 +15,7 @@
 <body>
     <div class="ms-full-height border-2 w-full">
         <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="flex-none">
+            <div class="flex-none m-auto">
                 <ul class="menu menu-horizontal p-0">
                     <li><a href="#desktop">Item 1</a></li>
                     <li><a href="#mobile">Item 3</a></li>
