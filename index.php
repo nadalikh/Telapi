@@ -1,8 +1,7 @@
 <?php
-$appConneciton = new mysqli('195.28.11.16', "root", "expecto-patronum1379", "asterisk");
 $asteriskConnection = new mysqli("195.28.11.16", "root", "expecto-patronum1379", "asterisk");
-if($appConneciton->connect_error || $asteriskConnection->connect_error)
-    die($appConneciton->connect_error."/n". $asteriskConnection->connect_error);
+if($asteriskConnection->connect_error)
+    die($asteriskConnection->connect_error);
 $res = $asteriskConnection->query("select id from asterisk.devices where description = 'UNKNOWN'");
 $extensions = array();
 while($row = $res->fetch_assoc())
@@ -15,6 +14,7 @@ while($row = $res->fetch_assoc())
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
