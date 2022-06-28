@@ -37,12 +37,12 @@ while($row = $res->fetch_assoc())
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}" title=" must be at least 5-characters long, and may consist only of a-z, 0–9, and underscores.">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block text-center" for="p1">password</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p1" id="p1" placeholder="Your password">
+                    <label class="text-neutral-50 block text-center" for="p1">Password</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p1" id="p1" placeholder="Your password" pattern="[a-zA-Z0-9@#$%&*_-]{5,}" title="you password can only consist of six or more alphabets, digits and @#$%&*_-.">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block text-center" for="p2">password confirmation</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p2" id="p2" placeholder="Your password confirmation">
+                    <label class="text-neutral-50 block text-center" for="p2">Password confirmation</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p2" id="p2" placeholder="Your password confirmation" pattern="[a-zA-Z0-9@#$%&*_-]{5,}" title="you password can only consist of six or more alphabets, digits and @#$%&*_-.">
                 </div>
                 <div class="ms-wrapper">
                 <label class="text-neutral-50 block text-center" for="cars">Your voip extension</label>
@@ -60,12 +60,12 @@ while($row = $res->fetch_assoc())
             <form method="post" class="w-full m-auto">
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block text-center" for="userid-s">username</label>
+                    <label class="text-neutral-50 block text-center" for="userid-s">Username</label>
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid-s"  placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}" title=" must be at least 5-characters long, and may consist only of a-z, 0–9, and underscores.">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block text-center" for="p">password</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p" id="p" placeholder="Your password">
+                    <label class="text-neutral-50 block text-center" for="p">Password</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p" id="p" placeholder="Your password" pattern="[a-zA-Z0-9@#$%&*_-]{5,}" title="you password can only consist of six or more alphabets, digits and @#$%&*_-.">
                 </div>
                 <div class="ms-wrapper">
                     <input class="text-neutral-50 btn m-auto block" type="submit" value="signin" name="login">
