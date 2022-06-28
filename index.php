@@ -1,9 +1,12 @@
 <?php
 $appConneciton = new mysqli('195.28.11.16', "root", "expecto-patronum1379", "asterisk");
-//$asteriskConnection = new mysqli("195.28.11.16", "root", "expecto-patronum1379", "asterisk");
-if($appConneciton->connect_error/* || $asteriskConnection->connect_error*/)
-    die($appConneciton->connect_error."/n"/*. $asteriskConnection->connect_error*/);
-
+$asteriskConnection = new mysqli("195.28.11.16", "root", "expecto-patronum1379", "asterisk");
+if($appConneciton->connect_error || $asteriskConnection->connect_error)
+    die($appConneciton->connect_error."/n". $asteriskConnection->connect_error);
+$res = $asteriskConnection->query("select id from asterisk.devices where description = 'UNKNOWN'");
+$extensions = array();
+while($row = $res->fetch_assoc())
+    $extensions[] = $row['id'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -42,12 +45,11 @@ if($appConneciton->connect_error/* || $asteriskConnection->connect_error*/)
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p2" id="p2" placeholder="Your password confirmation">
                 </div>
                 <div class="ms-wrapper">
-                <label class="text-neutral-50 block text-center" for="cars">Your voip extention</label>
+                <label class="text-neutral-50 block text-center" for="cars">Your voip extension</label>
                 <select class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" name="cars" id="cars">
-                    <option class="text-neutral-50 bg-slate-800" value="volvo">Volvo</option>
-                    <option class="text-neutral-50 bg-slate-800" value="saab">Saab</option>
-                    <option class="text-neutral-50 bg-slate-800" value="mercedes">Mercedes</option>
-                    <option class="text-neutral-50 bg-slate-800" value="audi">Audi</option>
+                    <?php foreach($extensions as $extension){ ?>
+                        <option class="text-neutral-50 bg-slate-800" value="<?= $extension ?>"><?= $extension ?></option>
+                    <?php } ?>
                 </select>
                 </div>
                 <div class="ms-wrapper">
