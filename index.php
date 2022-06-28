@@ -38,7 +38,6 @@
                 </select>
                 <input class="text-neutral-50 " type="submit" name="signup" value="signup">
             </form>
-            <hr>
             <form method="post">
                 <label class="text-neutral-50 " for="userid">username</label>
                 <input class="text-neutral-50 " type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
