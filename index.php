@@ -47,6 +47,7 @@ while($row = $res->fetch_assoc())
                 <div class="ms-wrapper">
                 <label class="text-neutral-50 block text-center" for="cars">Your voip extension</label>
                 <select class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" name="cars" id="cars">
+                    <option class="text-neutral-50 bg-slate-800" disabled value="Choose your preferred number"></option>
                     <?php foreach($extensions as $extension){ ?>
                         <option class="text-neutral-50 bg-slate-800" value="<?= $extension ?>"><?= $extension ?></option>
                     <?php } ?>
