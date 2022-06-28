@@ -23,28 +23,28 @@
         </div>
         <div class="">
             <form method="post">
-                <label for="userid">Telegram Id (as your username)</label>
-                <input type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
-                <label for="p1">password</label>
-                <input type="password" name="p1" id="p1">
-                <label for="p2">password confirmation</label>
-                <input type="password" name="p2" id="p2">
-                <label for="cars">Your voip extention</label>
-                <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
+                <label class="text-neutral-50 " for="userid">Telegram Id (as your username)</label>
+                <input class="text-neutral-50 " type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                <label class="text-neutral-50 " for="p1">password</label>
+                <input class="text-neutral-50 " type="password" name="p1" id="p1">
+                <label class="text-neutral-50 " for="p2">password confirmation</label>
+                <input class="text-neutral-50 " type="password" name="p2" id="p2">
+                <label class="text-neutral-50 " for="cars">Your voip extention</label>
+                <select class="text-neutral-50 " name="cars" id="cars">
+                    <option class="text-neutral-50 " value="volvo">Volvo</option>
+                    <option class="text-neutral-50 " value="saab">Saab</option>
+                    <option class="text-neutral-50 " value="mercedes">Mercedes</option>
+                    <option class="text-neutral-50 " value="audi">Audi</option>
                 </select>
-                <input type="submit" name="signup" value="signup">
+                <input class="text-neutral-50 " type="submit" name="signup" value="signup">
             </form>
             <hr>
             <form method="post">
-                <label for="userid">username</label>
-                <input type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
-                <label for="p">password</label>
-                <input type="password" name="p" id="p">
-                <input type="submit" value="signin" name="login">
+                <label class="text-neutral-50 " for="userid">username</label>
+                <input class="text-neutral-50 " type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                <label class="text-neutral-50 " for="p">password</label>
+                <input class="text-neutral-50 " type="password" name="p" id="p">
+                <input class="text-neutral-50 " type="submit" value="signin" name="login">
             </form>
         </div>
     </div>
