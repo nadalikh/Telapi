@@ -24,8 +24,8 @@
 <!--                </div>-->
 <!--            </div>-->
             <div class="grid grid-flow-col auto-cols-max justify-center gap-2.5">
-                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3">Desktop</a>
-                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3">Mobile</a>
+                <a href="#desktop" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3 rounde    ">Desktop</a>
+                <a href="#mobile" class="text-neutral-50 ms-nav-item block m-3 px-5 py-3">Mobile</a>
 
             </div>
         </div>

@@ -18,6 +18,7 @@
 }
 .ms-nav-item:hover{
     border:1px solid white !important;
+    box-shadow:2px 2px 8px azure;
 }
 .ms-nav-item:focus{
     border:1px solid white !important;
