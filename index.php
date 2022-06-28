@@ -17,8 +17,8 @@
         <div class="navbar bg-base-100">
             <div class="flex-none m-auto">
                 <ul class="menu menu-horizontal p-0">
-                    <li><a href="#desktop">Item 1</a></li>
-                    <li><a href="#mobile">Item 3</a></li>
+                    <li><a href="#desktop">Desktop</a></li>
+                    <li><a href="#mobile">Mobile</a></li>
                 </ul>
             </div>
         </div>
