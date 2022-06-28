@@ -49,10 +49,14 @@
                 </div>
             </form>
             <form method="post" class="w-2/3 m-auto">
-                <label class="text-neutral-50 block " for="userid">username</label>
-                <input class="text-neutral-50 block w-full" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
-                <label class="text-neutral-50 block" for="p">password</label>
-                <input class="text-neutral-50 block w-full" type="password" name="p" id="p">
+                <div class="ms-wrapper">
+                    <label class="text-neutral-50 block " for="userid">username</label>
+                    <input class="text-neutral-50 block w-full" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                </div>
+                <div class="ms-wrapper">
+                    <label class="text-neutral-50 block" for="p">password</label>
+                    <input class="text-neutral-50 block w-full" type="password" name="p" id="p">
+                </div>
                 <input class="text-neutral-50 block " type="submit" value="signin" name="login">
             </form>
         </div>
