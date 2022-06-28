@@ -17,11 +17,10 @@
     <div class="ms-full-height ms-img-background w-full bg-cover bg-no-repeat bg-center">
         <div class="ms-darkbackground w-full h-full">
             <div class="ms-transparent navbar bg-base-100">
-                <div class="flex-none m-auto">
-                    <ul class="menu menu-horizontal p-0">
-                        <li><a href="#desktop" class="text-neutral-50 ms-nav-item">Desktop</a></li>
-                        <li><a href="#mobile" class="text-neutral-50 ms-nav-item">Mobile</a></li>
-                    </ul>
+                <div class="grid grid-col-2">
+                    <a href="#desktop" class="text-neutral-50 ms-nav-item">Desktop</a>
+                    <a href="#mobile" class="text-neutral-50 ms-nav-item">Mobile</a>
+
                 </div>
             </div>
         </div>
