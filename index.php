@@ -46,7 +46,7 @@
                 </select>
                 </div>
                 <div class="ms-wrapper">
-                    <input class="text-neutral-50 " type="submit" name="signup" value="signup">
+                    <input class="text-neutral-50 btn m-auto block" type="submit" name="signup" value="signup">
                 </div>
             </form>
             <form method="post" class="w-2/3 m-auto">
@@ -60,7 +60,7 @@
                     <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input" type="password" name="p" id="p" placeholder="Your password">
                 </div>
                 <div class="ms-wrapper">
-                    <input class="text-neutral-50 block " type="submit" value="signin" name="login">
+                    <input class="text-neutral-50 btn m-auto block" type="submit" value="signin" name="login">
                 </div>
             </form>
         </div>
