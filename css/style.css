@@ -32,5 +32,10 @@
 }
 .ms-wrapper{
     margin-top: 30px;
+}
 
+.ms-input{
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    border-radius: 5px;
 }
