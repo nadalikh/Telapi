@@ -12,3 +12,13 @@
 .ms-darkbackground{
     background:linear-gradient(90deg,#000000a8, #000000b5);
 }
+.ms-nav-item{
+
+}
+.ms-nav-item:hover{
+    border:1px solid white !important;
+}
+.ms-nav-item:focus{
+    border:1px solid white !important;
+
+}
