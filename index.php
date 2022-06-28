@@ -49,7 +49,7 @@
                     <input class="text-neutral-50 btn m-auto block" type="submit" name="signup" value="signup">
                 </div>
             </form>
-            <form method="post" class="w-full m-auto">
+            <form method="post" class="w-full m-auto" style="border-right: 1px solid aliceblue;">
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid-s">username</label>
