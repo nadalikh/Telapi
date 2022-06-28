@@ -15,7 +15,7 @@
 
 <body>
     <div class="ms-full-height ms-img-background border-2 w-full">
-        <div class="navbar bg-base-100" style="background: transparent">
+        <div class="navbar bg-base-100 bg-cover" style="background: transparent">
             <div class="flex-none m-auto">
                 <ul class="menu menu-horizontal p-0">
                     <li><a href="#desktop">Desktop</a></li>
