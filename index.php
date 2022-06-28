@@ -25,20 +25,20 @@
             <form method="post" class="w-full m-auto">
                 <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block w-full" for="userid">Telegram Id (as your username)</label>
-                    <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <label class="text-neutral-50 block text-center" for="userid">Telegram Id (as your username)</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block " for="p1">password</label>
-                    <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" type="password" name="p1" id="p1" placeholder="Your password">
+                    <label class="text-neutral-50 block text-center" for="p1">password</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p1" id="p1" placeholder="Your password">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block" for="p2">password confirmation</label>
-                    <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" type="password" name="p2" id="p2" placeholder="Your password confirmation">
+                    <label class="text-neutral-50 block text-center" for="p2">password confirmation</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p2" id="p2" placeholder="Your password confirmation">
                 </div>
                 <div class="ms-wrapper">
-                <label class="text-neutral-50 block" for="cars">Your voip extention</label>
-                <select class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" name="cars" id="cars">
+                <label class="text-neutral-50 block text-center" for="cars">Your voip extention</label>
+                <select class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" name="cars" id="cars">
                     <option class="text-neutral-50 bg-slate-800" value="volvo">Volvo</option>
                     <option class="text-neutral-50 bg-slate-800" value="saab">Saab</option>
                     <option class="text-neutral-50 bg-slate-800" value="mercedes">Mercedes</option>
@@ -52,12 +52,12 @@
             <form method="post" class="w-full m-auto">
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block " for="userid">username</label>
-                    <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
+                    <label class="text-neutral-50 block text-center" for="userid">username</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
                 </div>
                 <div class="ms-wrapper">
-                    <label class="text-neutral-50 block" for="p">password</label>
-                    <input class="outline-none text-neutral-50 block w-full ms-transparent ms-input transition-all w-2/3" type="password" name="p" id="p" placeholder="Your password">
+                    <label class="text-neutral-50 block text-center" for="p">password</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p" id="p" placeholder="Your password">
                 </div>
                 <div class="ms-wrapper">
                     <input class="text-neutral-50 btn m-auto block" type="submit" value="signin" name="login">
