@@ -23,7 +23,7 @@
         </div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 grid-rows-1 justify-center w-1/2">
             <form method="post" class="w-2/3 m-auto">
-                <h1 class="text-neutral-50 center">Signup</h1>
+                <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block w-full" for="userid">Telegram Id (as your username)</label>
                     <input class="text-neutral-50 block w-full ms-transparent ms-input" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
@@ -50,7 +50,7 @@
                 </div>
             </form>
             <form method="post" class="w-2/3 m-auto">
-                <h3 class="text-neutral-50 center">Signin</h3>
+                <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block " for="userid">username</label>
                     <input class="text-neutral-50 block w-full ms-transparent ms-input" type="text" name="userid" id="userid" placeholder="Your telegram id with out @">
