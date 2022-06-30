@@ -37,6 +37,10 @@ while($row = $res->fetch_assoc())
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="userid" id="userid" placeholder="Your telegram id with out @" pattern="[a-z0-9_]{5,}" title=" must be at least 5-characters long, and may consist only of a-z, 0–9, and underscores.">
                 </div>
                 <div class="ms-wrapper">
+                    <label class="text-neutral-50 block text-center" for="name">Name</label>
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="name" id="name" placeholder="Your voip preferred voip name" pattern="[a-zA-Z]*{,25}" title="You'r name should consist maximum 25 alphabet character">
+                </div>
+                <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p1">Password</label>
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p1" id="p1" placeholder="Your password" pattern="[a-zA-Z0-9@#$%&*_-]{5,}" title="you password can only consist of six or more alphabets, digits and @#$%&*_-.">
                 </div>
@@ -45,8 +49,8 @@ while($row = $res->fetch_assoc())
                     <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="password" name="p2" id="p2" placeholder="Your password confirmation" pattern="[a-zA-Z0-9@#$%&*_-]{5,}" title="you password can only consist of six or more alphabets, digits and @#$%&*_-.">
                 </div>
                 <div class="ms-wrapper">
-                <label class="text-neutral-50 block text-center" for="cars">Your voip extension</label>
-                <select class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" name="cars" id="cars">
+                <label class="text-neutral-50 block text-center" for="extension">Your voip extension</label>
+                <select class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" name="extension" id="extension">
                     <option class="text-neutral-50 bg-slate-800" disabled selected hidden value="Choose your preferred number">Choose your preferred number</option>
                     <?php foreach($extensions as $extension){ ?>
                         <option class="text-neutral-50 bg-slate-800" value="<?= $extension ?>"><?= $extension ?></option>
