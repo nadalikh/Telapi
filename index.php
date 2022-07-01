@@ -81,10 +81,10 @@ $extensions = $db->getExtensions();
 
             data: {
                 method:"signup",
-                userid:$("#userid").value,
-                name:$("#name").value,
-                p1:$("#p1").value,
-                p2:$("#p2").value,
+                userid:$("#userid").val(),
+                name:$("#name").val(),
+                p1:$("#p1").val(),
+                p2:$("#p2").val (),
                 extension:$('#extension').find(":selected").text(),
             },
             success: function(res, data){
