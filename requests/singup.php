@@ -10,9 +10,8 @@ if(isset($_POST['signup'])){
     $p1 = $_POST['p1'];
     $p2 = $_POST['p2'];
     $name = $_POST['name'];
-    $role = "user";
-
     $extension = $_POST['extension'];
+    $role = "user";
     if(!$truth)
         return json_encode(['message'=>'formats is not valid']);
 
@@ -23,5 +22,4 @@ if(isset($_POST['signup'])){
     $db->addUser($username, $name, $role, $p);
     $db->assignExtensionTouser($extension, $name);
     return json_encode(['message'=>'You registered successfully']);
-
 }

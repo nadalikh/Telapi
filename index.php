@@ -26,7 +26,7 @@ $extensions = $db->getExtensions();
             </div>
         </div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 grid-rows-1 justify-center w-2/3">
-            <form method="post" action="./requests/singup.php" class="w-full m-auto" style="border-right: 1px solid aliceblue;">
+            <div  class="w-full m-auto" style="border-right: 1px solid aliceblue;">
                 <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid">Telegram Id (as your username)</label>
@@ -54,9 +54,9 @@ $extensions = $db->getExtensions();
                 </select>
                 </div>
                 <div class="ms-wrapper">
-                    <input class="text-neutral-50 btn m-auto block" type="submit" name="signup" value="signup">
+                    <button class="text-neutral-50 btn m-auto block" type="submit" id="signup">signup</button>
                 </div>
-            </form>
+            </div>
             <form method="post" class="w-full m-auto">
                 <h3 class="text-neutral-50 text-center font-bold">Signin</h3>
                 <div class="ms-wrapper">
@@ -73,5 +73,27 @@ $extensions = $db->getExtensions();
             </form>
         </div>
     </div>
+<script>
+    $("#signup").click(function (){
+        $.ajax({
+            type: "POST",
+            url: "./requests/signup.php",
+            data: {
+                userid:$("#userid").value,
+                name:$("#name").value,
+                p1:$("#p1").value,
+                p2:$("#p2").value,
+                extension:$('#extension').find(":selected").text(),
+            },
+            success: function(res, data){
+                alert(res.message)
+            },
+            dataType: "json"
+        });
+
+
+    })
+
+</script>
 </body>
 </html>
