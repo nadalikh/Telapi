@@ -21,4 +21,11 @@ class dbContext{
         $stmt->bind_param("ss", $name, $extension);
         $stmt->execute();
     }
+    public function getExtensions(){
+        $res = $this->asteriskConnection->query("select id from asterisk.devices where description = 'UNKNOWN'");
+        $extensions = array();
+        while($row = $res->fetch_assoc())
+            $extensions[] = $row['id'];
+        return $extensions;
+    }
 }

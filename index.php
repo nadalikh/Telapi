@@ -1,11 +1,7 @@
 <?php
-$asteriskConnection = new mysqli("195.28.11.16", "root", "expecto-patronum1379", "asterisk");
-if($asteriskConnection->connect_error)
-    die($asteriskConnection->connect_error);
-$res = $asteriskConnection->query("select id from asterisk.devices where description = 'UNKNOWN'");
-$extensions = array();
-while($row = $res->fetch_assoc())
-    $extensions[] = $row['id'];
+    $db = new dbContext();
+    $extensions = $db->getExtensions();
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -30,7 +26,7 @@ while($row = $res->fetch_assoc())
             </div>
         </div>
         <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 grid-rows-1 justify-center w-2/3">
-            <form method="post" class="w-full m-auto" style="border-right: 1px solid aliceblue;">
+            <form method="post" action="./requests/singup.php" class="w-full m-auto" style="border-right: 1px solid aliceblue;">
                 <h3 class="text-neutral-50 text-center font-bold">Signup</h3>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="userid">Telegram Id (as your username)</label>
