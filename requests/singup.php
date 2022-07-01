@@ -11,6 +11,8 @@ if(isset($_POST['signup'])){
     $p2 = $_POST['p2'];
     $name = $_POST['name'];
     $role = "user";
+    echo "dfdf";
+
     $extension = $_POST['extension'];
     if(!$truth)
         return json_encode(['message'=>'formats is not valid']);
@@ -21,5 +23,4 @@ if(isset($_POST['signup'])){
     $db->addUser($username, $name, $role, $p);
     $db->assignExtensionTouser($extension, $name);
     return json_encode(['message'=>'You registered successfully']);
-    echo "dfdf";
 }
