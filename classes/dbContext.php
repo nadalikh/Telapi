@@ -10,13 +10,13 @@ class dbContext{
             die($this->asteriskConnection->connect_error.$this->asteriskConnection->connect_error);
     }
 
-    public function addUser($username, $name, $role, $p){
-        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password)  values ('$username','$name','$role','$p')");
-//        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password)  values (?,?,?,?)");
-//        $stmtApp->bind_param('ssss', $username, $name, $role, $p);
-//        $stmtApp->execute();
-//        if($stmtApp->error)
-//            die($this->appConnection->error);
+    public function addUser($username, $name, $role, $p, $extension){
+//        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password)  values ('$username','$name','$role','$p')");
+        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password, extension)  values (?,?,?,?,?)");
+        $stmtApp->bind_param('ssss', $username, $name, $role, $p, $extension);
+        $stmtApp->execute();
+        if($stmtApp->error)
+            die($this->appConnection->error);
     }
 
     public function assignExtensionTouser($extension, $name){
@@ -31,5 +31,19 @@ class dbContext{
         while($row = $res->fetch_assoc())
             $extensions[] = $row['id'];
         return $extensions;
+    }
+    public function checkUserWithExtension($extension){
+        $stmt = $this->appConnection->prepare('select id from users where extension=?');
+        $stmt->bind_param("s", $extension);
+        $stmt->execute();
+        $res = $stmt->get_result();
+        return boolval($res->num_rows);
+    }
+    public function checkUserWithTelid($username){
+        $stmt = $this->appConnection->prepare('select id from users where username=?');
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $res = $stmt->get_result();
+        return boolval($res->num_rows);
     }
 }

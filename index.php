@@ -97,7 +97,6 @@ $extensions = $db->getExtensions();
                 res = JSON.parse(res)
                 swal(res.status ? "successfully done":"operation is failed", res.message, res.status ? "success":"error");
             },
-            // dataType: "json"
         });
 
 

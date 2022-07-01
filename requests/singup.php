@@ -16,13 +16,16 @@ if($_POST['method'] === "signup"){
     $name = $_POST['name'];
     $extension = $_POST['extension'];
     $role = "user";
+    $db = new dbContext();
+
     if(!$truth)
         response("formats not valid", 0);
     if($p1 !== $p2)
         response('password not confirmed', 0);
+    if($db->checkUserWithExtension($extension))
+        response("A use took this extension. It logically shouldn't happen, please contact with admin", 0);
     $p = md5($p1);
-    $db = new dbContext();
-    $db->addUser($username, $name, $role, $p);
+    $db->addUser($username, $name, $role, $p, $extension);
     $db->assignExtensionTouser($extension, $name);
     response('You registered successfully', 1);
 }
