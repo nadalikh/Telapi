@@ -77,7 +77,8 @@ $extensions = $db->getExtensions();
     $("#signup").click(function (){
         $.ajax({
             type: "POST",
-            url: "./requests/signup.php",
+            url: "./requests/singup.php",
+
             data: {
                 userid:$("#userid").value,
                 name:$("#name").value,
