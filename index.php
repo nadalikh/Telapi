@@ -89,7 +89,7 @@ $extensions = $db->getExtensions();
             success: function(res, data){
                 alert(res.message)
             },
-            dataType: "json"
+            // dataType: "json"
         });
 
 
