@@ -1,5 +1,5 @@
 <?php
-include "../classes/dbContext.php";
+include "classes/dbContext.php";
 $db = new dbContext();
 $extensions = $db->getExtensions();
 
