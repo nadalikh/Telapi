@@ -78,7 +78,6 @@ $extensions = $db->getExtensions();
         $.ajax({
             type: "POST",
             url: "./requests/singup.php",
-
             data: {
                 method:"signup",
                 userid:$("#userid").val(),
