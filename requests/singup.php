@@ -24,6 +24,7 @@ if($_POST['method'] === "signup"){
         response('password not confirmed', 0);
     if($db->checkUserWithExtension($extension))
         response("A use took this extension. It logically shouldn't happen, please contact with admin", 0);
+    die("dfdffdf");
     $p = md5($p1);
     $db->addUser($username, $name, $role, $p, $extension);
     $db->assignExtensionTouser($extension, $name);
