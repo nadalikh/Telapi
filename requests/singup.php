@@ -1,7 +1,7 @@
 <?php
 include "../classes/dbContext.php";
-function response($message){
-    echo json_encode(['message'=> $message]);
+function response($message, $status){
+    echo json_encode(['message'=> $message, "status"=>$status]);
     die();
 }
 if($_POST['method'] === "signup"){
@@ -17,12 +17,12 @@ if($_POST['method'] === "signup"){
     $extension = $_POST['extension'];
     $role = "user";
     if(!$truth)
-        response("formats not valid");
+        response("formats not valid", 0);
     if($p1 !== $p2)
-        response('password not confirmed');
+        response('password not confirmed', 0);
     $p = md5($p1);
     $db = new dbContext();
     $db->addUser($username, $name, $role, $p);
     $db->assignExtensionTouser($extension, $name);
-    response('You registered successfully');
+    response('You registered successfully', 1);
 }
