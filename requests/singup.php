@@ -21,5 +21,5 @@ if(isset($_POST['signup'])){
     $db->addUser($username, $name, $role, $p);
     $db->assignExtensionTouser($extension, $name);
     return json_encode(['message'=>'You registered successfully']);
-
+    echo "dfdf";
 }
