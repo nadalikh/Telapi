@@ -14,7 +14,7 @@ class dbContext{
         $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password)  values (?,?,?,?)");
         $stmtApp->bind_param('ssss', $username, $name, $role, $p);
         $stmtApp->execute();
-        if($this->appConnection->error)
+        if($stmtApp->error)
             die($this->appConnection->error);
     }
 
