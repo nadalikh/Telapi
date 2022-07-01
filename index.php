@@ -82,7 +82,7 @@ $extensions = $db->getExtensions();
     var submitSignup = $("#signup");
     var signupForm = $("#signup-form");
     submitSignup.click(function (){
-        name.validate();
+       signupForm[0].checkValidity();
         $.ajax({
             type: "POST",
             url: "./requests/singup.php",
