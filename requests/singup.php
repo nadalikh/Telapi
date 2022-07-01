@@ -6,7 +6,6 @@ if(isset($_POST['signup'])){
     $truth &= preg_match("/^[a-zA-Z0-9@#$%&*_-]{5,}$/", $_POST['p2']);
     $truth &= preg_match("/^[a-zA-Z]{1,25}$/", $_POST['name']);
     $truth &= preg_match("/^[0-9]{3}$/", $_POST['extension']);
-    echo $truth;
     $username = $_POST['userid'];
     $p1 = $_POST['p1'];
     $p2 = $_POST['p2'];
@@ -19,11 +18,11 @@ if(isset($_POST['signup'])){
 
     if($p1 === $p2)
         return json_encode(['message'=>'password not confirmed']);
+    echo "dfdf";
     $p = md5($p1);
     $db = new dbContext();
     $db->addUser($username, $name, $role, $p);
     $db->assignExtensionTouser($extension, $name);
     return json_encode(['message'=>'You registered successfully']);
-    echo "dfdf";
 
 }
