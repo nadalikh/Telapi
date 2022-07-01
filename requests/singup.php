@@ -15,10 +15,10 @@ if(isset($_POST['signup'])){
     $extension = $_POST['extension'];
     if(!$truth)
         return json_encode(['message'=>'formats is not valid']);
+    echo "dfdf";
 
     if($p1 === $p2)
         return json_encode(['message'=>'password not confirmed']);
-    echo "dfdf";
     $p = md5($p1);
     $db = new dbContext();
     $db->addUser($username, $name, $role, $p);
