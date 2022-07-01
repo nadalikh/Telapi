@@ -87,7 +87,7 @@ $extensions = $db->getExtensions();
                 extension:$('#extension').find(":selected").text(),
             },
             success: function(res, data){
-                res = Json.parse(res)
+                res = JSON.parse(res)
                 alert(res.message)
             },
             // dataType: "json"
