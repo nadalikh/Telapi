@@ -11,11 +11,11 @@ class dbContext{
     }
 
     public function addUser($username, $name, $role, $p, $extension){
-        die("add user");
 //        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password)  values ('$username','$name','$role','$p')");
         $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password, extension)  values (?,?,?,?,?)");
         $stmtApp->bind_param('ssss', $username, $name, $role, $p, $extension);
         $stmtApp->execute();
+        die("add user");
         if($stmtApp->error)
             die($this->appConnection->error);
     }
