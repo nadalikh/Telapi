@@ -80,6 +80,7 @@ $extensions = $db->getExtensions();
             url: "./requests/singup.php",
 
             data: {
+                method:"signup",
                 userid:$("#userid").value,
                 name:$("#name").value,
                 p1:$("#p1").value,

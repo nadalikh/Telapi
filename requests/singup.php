@@ -1,6 +1,6 @@
 <?php
 include "../classes/dbContext.php";
-if(isset($_POST['signup'])){
+if($_POST['method'] === "signup"){
     $truth = preg_match("/^[a-z0-9_]{5,}$/", $_POST['userid']);
     $truth &= preg_match("/^[a-zA-Z0-9@#$%&*_-]{5,}$/", $_POST['p1']);
     $truth &= preg_match("/^[a-zA-Z0-9@#$%&*_-]{5,}$/", $_POST['p2']);
