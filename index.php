@@ -55,7 +55,7 @@ $extensions = $db->getExtensions();
                 </select>
                 </div>
                 <div class="ms-wrapper">
-                    <button class="text-neutral-50 btn m-auto block" type="submit" id="signup">signup</button>
+                    <button class="text-neutral-50 btn m-auto block" type="button" id="signup">signup</button>
                 </div>
             </form>
             <form method="post" class="w-full m-auto">
