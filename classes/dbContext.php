@@ -11,11 +11,12 @@ class dbContext{
     }
 
     public function addUser($username, $name, $role, $p){
-        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password)  values (?,?,?,?)");
-        $stmtApp->bind_param('ssss', $username, $name, $role, $p);
-        $stmtApp->execute();
-        if($stmtApp->error)
-            die($this->appConnection->error);
+        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password)  values ('$username','$name','$role','$p')");
+//        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password)  values (?,?,?,?)");
+//        $stmtApp->bind_param('ssss', $username, $name, $role, $p);
+//        $stmtApp->execute();
+//        if($stmtApp->error)
+//            die($this->appConnection->error);
     }
 
     public function assignExtensionTouser($extension, $name){
