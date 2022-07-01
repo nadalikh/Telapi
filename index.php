@@ -35,7 +35,7 @@ $extensions = $db->getExtensions();
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="name">Name</label>
-                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="name" id="kir" placeholder="Your voip preferred voip name" pattern="[a-zA-Z]{1,25}" title="Your name should consist maximum 25 alphabet character">
+                    <input class="outline-none text-neutral-50 block ms-transparent ms-input transition-all w-2/3 m-auto" type="text" name="name" id="name" placeholder="Your voip preferred voip name" pattern="[a-zA-Z]{1,25}" title="Your name should consist maximum 25 alphabet character">
                 </div>
                 <div class="ms-wrapper">
                     <label class="text-neutral-50 block text-center" for="p1">Password</label>
@@ -76,7 +76,7 @@ $extensions = $db->getExtensions();
     </div>
 <script>
     var userid = $("#userid");
-    var kir = $("#kir");
+    var namee = $("#name");
     var p1 = $("#p1");
     var p2 = $("#p2");
     var submitSignup = $("#signup");
