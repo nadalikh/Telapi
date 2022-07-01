@@ -1,7 +1,7 @@
 <?php
-    $db = new dbContext();
-    die("dfdf");
-    $extensions = $db->getExtensions();
+include "../classes/dbContext.php";
+$db = new dbContext();
+$extensions = $db->getExtensions();
 
 ?>
 <!doctype html>
