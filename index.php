@@ -1,5 +1,6 @@
 <?php
     $db = new dbContext();
+    die("dfdf");
     $extensions = $db->getExtensions();
 
 ?>
