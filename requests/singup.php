@@ -11,11 +11,12 @@ if(isset($_POST['signup'])){
     $p2 = $_POST['p2'];
     $name = $_POST['name'];
     $role = "user";
-    echo "dfdf";
 
     $extension = $_POST['extension'];
     if(!$truth)
         return json_encode(['message'=>'formats is not valid']);
+    echo "dfdf";
+
     if($p1 === $p2)
         return json_encode(['message'=>'password not confirmed']);
     $p = md5($p1);
