@@ -2,7 +2,6 @@
 include "classes/dbContext.php";
 $db = new dbContext();
 $extensions = $db->getExtensions();
-
 ?>
 <!doctype html>
 <html lang="en">

@@ -14,6 +14,8 @@ class dbContext{
         $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password)  values (?,?,?,?)");
         $stmtApp->bind_param('ssss', $username, $name, $role, $p);
         $stmtApp->execute();
+        if($this->appConnection->error)
+            die($this->appConnection->error);
     }
 
     public function assignExtensionTouser($extension, $name){
@@ -21,6 +23,7 @@ class dbContext{
         $stmt->bind_param("ss", $name, $extension);
         $stmt->execute();
     }
+
     public function getExtensions(){
         $res = $this->asteriskConnection->query("select id from asterisk.devices where description = 'UNKNOWN'");
         $extensions = array();
