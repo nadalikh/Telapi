@@ -6,7 +6,6 @@ if(isset($_POST['signup'])){
     $truth &= preg_match("/^[a-zA-Z0-9@#$%&*_-]{5,}$/", $_POST['p2']);
     $truth &= preg_match("/^[a-zA-Z]{,25}$/", $_POST['name']);
     $truth &= preg_match("/^[0-9]{3}$/", $_POST['extension']);
-    die("hrere");
     $username = $_POST['userid'];
     $p1 = $_POST['p1'];
     $p2 = $_POST['p2'];
