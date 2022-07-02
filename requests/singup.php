@@ -22,10 +22,10 @@ if($_POST['method'] === "signup"){
         response("formats not valid", 0);
     if($p1 !== $p2)
         response('password not confirmed', 0);
-    die("b add u");
 
     if($db->checkUserWithTelid($username))
         response('This telegram id is in use.', 0);
+    die("b add u");
 
     if($db->checkUserWithExtension($extension))
         response("A use took this extension. It logically shouldn't happen, please contact with admin", 0);
