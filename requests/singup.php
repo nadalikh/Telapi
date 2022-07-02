@@ -25,7 +25,7 @@ if($_POST['method'] === "signup"){
 
     if($db->checkUserWithTelid($username))
         response('This telegram id is in use.', 0);
-    die("b add u");
+//    die("b add u");
 
     if($db->checkUserWithExtension($extension))
         response("A use took this extension. It logically shouldn't happen, please contact with admin", 0);
