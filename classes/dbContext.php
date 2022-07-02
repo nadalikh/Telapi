@@ -12,9 +12,9 @@ class dbContext{
 
     public function addUser($username, $name, $role, $p, $extension){
 //        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password, extension)  values ('$username','$name','$role','$p', $extension)");
-        die("here");
+//        die("here");
 
-        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password, extension)  values (?,?,?,?,?)");
+        $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password, MSextension)  values (?,?,?,?,?)");
 
         $stmtApp->bind_param('sssss', $username, $name, $role, $p, $extension);
         $stmtApp->execute();
@@ -36,10 +36,7 @@ class dbContext{
         return $extensions;
     }
     public function checkUserWithExtension($extension){
-        die("fff");
-
-        $stmt = $this->appConnection->prepare('select id from users where extension=?');
-        var_dump($extension);
+        $stmt = $this->appConnection->prepare('select id from users where MSextension=?');
         $stmt->bind_param("s", $extension);
         $stmt->execute();
         $res = $stmt->get_result();
