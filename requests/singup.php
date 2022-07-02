@@ -28,6 +28,7 @@ if($_POST['method'] === "signup"){
     if($db->checkUserWithExtension($extension))
         response("A use took this extension. It logically shouldn't happen, please contact with admin", 0);
     $p = md5($p1);
+    die("b add u");
     $db->addUser($username, $name, $role, $p, $extension);
     $db->assignExtensionTouser($extension, $name);
     response('You registered successfully', 1);
