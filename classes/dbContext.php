@@ -13,8 +13,9 @@ class dbContext{
     public function addUser($username, $name, $role, $p, $extension){
 //        $stmtApp = $this->appConnection->query("insert into app.users (username, name, role, password, extension)  values ('$username','$name','$role','$p', $extension)");
         $stmtApp = $this->appConnection->prepare("insert into app.users (username, name, role, password, extension)  values (?,?,?,?,?)");
-        $stmtApp->bind_param('sssss', $username, $name, $role, $p, $extension);
         die("here");
+
+        $stmtApp->bind_param('sssss', $username, $name, $role, $p, $extension);
         $stmtApp->execute();
         if($stmtApp->error)
             die($this->appConnection->error);
