@@ -17,6 +17,7 @@ if($_POST['method'] === "signup"){
     $extension = $_POST['extension'];
     $role = "user";
     $db = new dbContext();
+    die("b add u");
 
     if(!$truth)
         response("formats not valid", 0);
