@@ -36,9 +36,10 @@ class dbContext{
         return $extensions;
     }
     public function checkUserWithExtension($extension){
+        die("fff");
+
         $stmt = $this->appConnection->prepare('select id from users where extension=?');
         var_dump($extension);
-        die("fff");
         $stmt->bind_param("s", $extension);
         $stmt->execute();
         $res = $stmt->get_result();
